@@ -116,7 +116,7 @@ public class MyEmployeeDatabaseServlet extends HttpServlet {
 			dispatcher.forward(request, response);
 		} catch(NumberFormatException e) {
 			e.printStackTrace();
-			forwardError(request, response, "/employee-form.jsp", "maxCapacityError", "Invalid employee id. Could not load employee from database");
+			forwardError(request, response, "/employee-form.jsp", "dbUpdateError", "Invalid employee id. Could not load employee from database");
 		}
 	}
 	
